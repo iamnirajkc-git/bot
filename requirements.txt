@@ -1,0 +1,11 @@
+pandas
+nltk
+numpy
+scikit-learn
+sklearn
+stopwords
+Flask==2.0.1
+Werkzeug
+
+
+
