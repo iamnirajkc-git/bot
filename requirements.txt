@@ -1,4 +1,4 @@
-pandas
+ pandas
 nltk
 numpy
 scikit-learn
@@ -15,6 +15,7 @@ MarkupSafe==2.1.1
 Werkzeug==2.2.2
 zipp==3.10.0
 requests==2.26.0
+cloudscraper
 
 
 
