@@ -9,9 +9,9 @@ from nltk.stem import WordNetLemmatizer, PorterStemmer
 from nltk.corpus import stopwords
 import re
 
-# nltk.download('punkt')
-# nltk.download('wordnet')
-# nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('stopwords')
 
 def preprocess(text):
     lemmatizer = WordNetLemmatizer()

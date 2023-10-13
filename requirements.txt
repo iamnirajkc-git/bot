@@ -34,3 +34,13 @@ urllib3==1.26.17
 uvicorn==0.23.2
 Werkzeug==2.2.2
 zipp==3.10.0
+requests==2.26.0
+cloudscraper
+pip==23.2.1
+# Other dependencies
+Gunicorn
+pip== 23.2.1
+
+
+
+

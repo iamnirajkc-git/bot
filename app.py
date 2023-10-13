@@ -1,7 +1,6 @@
 from gingerit import GingerIt
 import pandas as pd
 from flask import Flask, render_template, request, jsonify
-from gingerit import GingerIt
 #from gingerit.gingerit import GingerIt
 from chat import chatbot
 
@@ -36,5 +35,6 @@ def ask():
     
 
 if __name__ == "__main__":
-    app.run()
+    #app.run()
+    app.run(host='0.0.0.0', port=80)
     
