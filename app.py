@@ -33,7 +33,7 @@ def ask():
     # print(bot_response)
     return jsonify({'status':'OK','answer':bot_response})
     
-
+#
 #if __name__ == "__main__":
    # app.run()
     #app.run(host='0.0.0.0', port=80) #for azurre
