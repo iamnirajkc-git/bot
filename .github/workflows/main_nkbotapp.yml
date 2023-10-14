@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy container app to Azure Web App - chatbotnk1
+name: Build and deploy container app to Azure Web App - nkbotapp
 
 on:
   push:
@@ -22,15 +22,15 @@ jobs:
     - name: Log in to registry
       uses: docker/login-action@v2
       with:
-        registry: https://chatbotnk.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_dbb073c4691e42f0a5a7da3746cbc7f1 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_c594424353cf4447909fae38711d4654 }}
+        registry: https://botnk.azurecr.io/
+        username: ${{ secrets.AzureAppService_ContainerUsername_3aebb59ca9174279898f13608daa1fd0 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_e8b09ea488844f2a97b3bad95fa9b81f }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: chatbotnk.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_dbb073c4691e42f0a5a7da3746cbc7f1 }}/chicken:${{ github.sha }}
+        tags: botnk.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_3aebb59ca9174279898f13608daa1fd0 }}/bot:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -45,7 +45,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'chatbotNK1'
+        app-name: 'nkbotapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_2a33ca53f4384b87a94dbfa85d403f98 }}
-        images: 'chatbotnk.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_dbb073c4691e42f0a5a7da3746cbc7f1 }}/chicken:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_97427fbe9ced4df1b291cfd57999f1a5 }}
+        images: 'botnk.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_3aebb59ca9174279898f13608daa1fd0 }}/bot:${{ github.sha }}'
