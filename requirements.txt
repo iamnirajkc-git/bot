@@ -1,4 +1,5 @@
 
+nltk
 cloudscraper==1.2.71
 Flask==2.2.2
 numpy==1.26.0
