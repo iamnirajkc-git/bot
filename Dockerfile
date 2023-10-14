@@ -1,4 +1,4 @@
-FROM python:3.11.5
+FROM python:3.10
 RUN apt update -y && apt install awscli -y
 WORKDIR /app
 COPY . /app
