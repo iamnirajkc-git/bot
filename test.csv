@@ -8,3 +8,38 @@ What is the importance of data quality in data analytics?,"Data quality is vital
 What are the ethical considerations in data analytics?,"Ethical considerations in data analytics include ensuring data privacy and security, obtaining proper consent for data collection, using data in a fair and unbiased manner, and being transparent about the purposes and methods of data analysis. Ethical data analytics practices aim to protect individuals' rights and minimize potential harms."
 What are some common challenges in data analytics?,"Common challenges in data analytics include dealing with large and complex datasets, ensuring data quality and consistency, managing data privacy and security, selecting appropriate analytical techniques, interpreting and communicating results effectively, and staying up to date with evolving technologies and methodologies."
 Hi,"Hello, How can I help you"
+What was the main focus of your project involving KProtype clustering and RFM analysis?,"In this project, I used the KProtype clustering algorithm to cluster customers based on categorical variables. Additionally, I performed RFM (Recency, Frequency, Monetary) analysis."
+
+What techniques were employed in your medical cost estimation project,"In the medical cost estimation project, I used regression techniques to estimate medical costs based on health and demographic data. The project achieved an R-squared value of 76%."
+
+Can you describe the classification techniques used to recommend insurance packages in your project?,"In the insurance project, I used classification techniques to recommend insurance packages based on individual characteristics. The decision tree model demonstrated an accuracy of 88.22% in classifying the data, outperforming the KNN model, which achieved 72% accuracy."
+
+What was the primary objective of your project involving Twitter API and sentiment analysis?,"In the Twitter API project, I used the Twitter API to fetch live tweets about Apple products, analyzed the sentiments of people in those tweets, and visualized the tweets in a word cloud."
+
+How did you approach predicting house prices I created a linear regression model and deployed it in the cloud using Render to create a web app for predicting house prices."
+
+Tell me more about your NLP chatbot project related to Microbiology.,"I created an NLP chatbot using Python and various libraries, including NLTK. The chatbot is designed to answer user questions related to Microbiology using machine learning algorithms and natural language processing techniques."
+
+What was the main focus of your project involving convolutional neural networks (CNN)?,"In the project involving convolutional neural networks, I used CNN to classify images of cats and dogs."
+
+Could you describe your project involving cleaning housing data in SQL Server?,"In the SQL Server project, I focused on cleaning housing data using SQL Server."
+
+What was the objective of your data exploration project in SQL Server?,"In the data exploration project, I explored a COVID-19 dataset in SQL Server."
+
+Can you provide more details about your Tableau and PowerBI projects?,"I have created various Tableau and PowerBI dashboards. These projects involve visualizing data in an interactive and insightful manner."
+
+How did you analyze the correlation of movie revenue with different features?,"I analyzed the correlation of movie revenue with features such as votes, ratings, and company names using Python in a Jupyter notebook."
+
+Tell me about your project involving building a regression model in R for the insurance dataset.,"In the R project, I built a multiple regression model for the insurance dataset."
+
+What was the focus of your house price prediction project in Machine Learning in Data Science (Fall 2022)?,"In the project, I created a regression model in R to predict house prices in Ames, Iowa."
+
+Could you provide more details about your red wine quality analysis using Python?,"In the project, I compared different machine learning models to predict red wine quality using Python."
+
+How did you approach red wine quality analysis using R and different machine learning models?,"In the R project, I compared different machine learning models, including KNN, Decision Tree, and Random Forest, to predict red wine quality."
+
+Can you describe your project on analyzing vaccine adverse events using Tableau?,"In this project, I completed a data exploration and visualization project using Tableau, focusing on vaccine adverse events. I analyzed and visualized data from the Vaccine Adverse Event Reporting System (VAERS) to gain insights into vaccine safety."
+
+What was the objective of your Pokemon speed regression model project?,"In the project, I used different models to compare the predicted speed of Pokemon based on different attributes."
+
+What is your current location and contact information?,"I am located in Prairie View, Texas. You can reach me at (979) 985-0195, and my email is nkc@student.fitchburgstate.edu."

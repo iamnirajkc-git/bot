@@ -13,7 +13,9 @@ def chatbot(input):
         qa_response = "I can't answer this question."
         print("Except")
         # Save the question and the AI's response to the CSV file
-       #df = pd.DataFrame([['"' + input + '"', '"' + reply + '"']], columns=['Questions'])
-       #df.to_csv('bank.csv', mode='a', header=False, index=False)
-
+        data = {'Questions': [input], 'Answers': [qa_response]}
+        df = pd.DataFrame(data)
+        print("Data to be saved:", data)
+        print("File path:", r'C:\\Users\\nikc\\websitechatbot1\\questionsCollection.csv')
+        df.to_csv(r'C:\\Users\\nikc\\websitechatbot1\\questionsCollection.csv', mode='a', header=False, index=False)
     return qa_response

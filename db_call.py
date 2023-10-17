@@ -1,5 +1,5 @@
-
-
+import sys
+import time
 import pandas as pd
 import nltk
 import numpy as np
@@ -33,6 +33,20 @@ def preprocess_with_stopwords(text):
     return ' '.join(stemmed_tokens)
 
 class QASystem:
+    def is_greeting(self, text):
+        greetings = ["hello", "hi", "hey", "howdy", "hola", "good morning", "good afternoon", "good evening", "g'day", "greetings", "salutations", "what's up", "how's it going", "how are you", "yo", "hi there", "hey there"]
+        tokens = nltk.word_tokenize(text.lower())
+        for token in tokens:
+            if token in greetings:
+                return True
+        return False
+    def is_goodbye(self, text):
+        goodbyes = ["bye", "goodbye", "farewell", "see you", "see ya", "take care", "have a nice day", "so long", "catch you later", "until next time", "adieu", "later", "bye-bye", "cheerio", "ciao", "ta-ta", "see you later", "goodnight"]
+        tokens = nltk.word_tokenize(text.lower())
+        for token in tokens:
+            if token in goodbyes:
+                return True
+        return False
 
     def __init__(self, filepath):
         self.df = pd.read_csv(filepath, escapechar='\\')
@@ -43,11 +57,20 @@ class QASystem:
 
     def get_response(self, text):
         processed_text = preprocess_with_stopwords(text)
+        #processed_text = preprocess(text)
+        
+        if self.is_greeting(processed_text):
+            return "Hello! How can I assist you today?"
+
+        if self.is_goodbye(processed_text):
+            return "Goodbye! If you have more questions in the future, feel free to ask."
+            sys.exit()  # Exit the application
+        
         vectorized_text = self.vectorizer.transform([processed_text])
         similarities = cosine_similarity(vectorized_text, self.X)
         max_similarity = np.max(similarities)
 
-        if max_similarity > 0.6:
+        if max_similarity > 0.8:
             high_similarity_questions = [q for q, s in zip(self.questions_list, similarities[0]) if s > 0.8]
             target_answers = []
             for q in high_similarity_questions:
